@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Share+Tech&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #C0C0C0;
+    --botao-roxo: #6D28D9;
+    --botao-roxo2: #8E5DFF;
+    --background: #00030C;
+    --fonte-principal: "Inter";
+}
+
+body {
+    background-color: var(--background);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.principal {
+    background-image: url("imagens/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container-botao {
+    background-color: var(--botao-roxo);
+    border-radius: 10px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao-secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container-aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container-titulo {
+    font-size: 28px;
+    font-weight: 700px;
+}
+
+.container-imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container-caixa {
+    margin: 0 6em;
+}
+
