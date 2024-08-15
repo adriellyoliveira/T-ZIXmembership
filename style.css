@@ -8,10 +8,14 @@
 :root {
     --branco-principal: #ffffff;
     --cinza-secundario: #C0C0C0;
+    --cinza-terciario: #464646;
     --botao-roxo: #6D28D9;
     --botao-roxo2: #8E5DFF;
     --background: #00030C;
+    --roxo-card: #210055;
+    --roxo-card-efeito: #17073b;
     --fonte-principal: "Inter";
+
 }
 
 body {
@@ -129,7 +133,7 @@ body {
 
 .rodape {
     text-align: center;
-    margin: 0 3em;
+    margin: 5em 3em;
 }
 
 .rodape-logo {
@@ -161,6 +165,109 @@ body {
 .lista-link a:active {
     color: var(--botao-roxo2);
 }
+
+.assinatura {
+    text-align: center;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--botao-roxo);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sub-header {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+}
+
+.pricing {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing .card {
+    margin: 0 1em;
+    padding: 3rem 2rem;
+    background-color: var(--roxo-card);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing .card:hover{
+    background-color: var(--roxo-card-efeito);
+    border-color: #fff;
+}
+
+.pricing .card .content {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card h3 {
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p {
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.card-aviso {
+    font-size: 12px;
+}
+
+.pricing .card button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid;
+}
+
+.pricing .card button:hover {
+    background-color: var(--botao-roxo);
+    border-color: var(--branco-principal);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Media Queries para Responsividade */
